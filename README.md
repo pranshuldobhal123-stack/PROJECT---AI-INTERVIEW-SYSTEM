@@ -21,7 +21,7 @@ The application files are located inside the nested `ai-interview-system/` folde
   - `main.py` — FastAPI WebSocket server
   - `services/llm.py` — Groq LLM chat integration
   - `services/tts.py` — edge-tts audio generation
-  - `.env` — environment variables for Groq API key (not committed)
+  - `.env` — environment variables for Groq API key 
 
 - `ai-interview-system/frontend/`
   - `app/page.tsx` — landing page and session startup
@@ -92,14 +92,6 @@ npm run dev
 
 Open the browser at the port shown by Next.js, then start the interview session.
 
-## 🛡️ Security & notes
 
-- `.env` files should never be committed to source control
-- The backend currently accepts `allow_origins=["*"]` for development only
-- For production, secure the WebSocket connection and restrict CORS
 
-## 📌 Important
 
-- The repository default branch is `main`
-- The root README points to the nested project folder structure
-- If you want, I can also help flatten the repository so `backend/` and `frontend/` are at the root level
